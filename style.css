@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+   
+    background-color:rgb(16, 16, 16);
+        justify-content: center;
+    align-items: center;
+  }
+
+  .box-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;  
+  }
+
+  .wrapper {
+    transform-origin: center center;
+    animation: rotate 200s linear infinite;
+    height: 130%;
+    height: 120%;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+.qr-block {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 211px;
+    height: 263px;
+    background-color:  #1f1f1f ; /* #101010 */
+
+    border-color:  rgba(243, 245, 247, 0.15);;
+
+    border-style: solid;
+    border-top-width: 0.5px;
+    border-left-width: 0.5px;
+    border-right-width: 0.5px;
+    border-bottom-width: 0.5px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.qr-block_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+}
+.qr-block_main img{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 154px;
+    height: 154px;
+}
+.qr-block-platform {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-top: 1px solid #000; 
+
+    
+    border-color:  rgba(243, 245, 247, 0.15);
+    
+  
+}
+.qr-block-apple {
+    width: 104.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.qr-block-apple img {
+  width: 36px;
+  height: 36px;
+   
+}
+.qr-block-apple:hover {
+  overflow: hidden;
+
+    height: 55px;
+    background-color:  #373737;
+    border-bottom-left-radius: 18px; 
+    width: 104.5px;
+}
+.qr-block-android{
+  
+    width: 104.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qr-block-android:hover {
+ 
+    height: 55px;
+    background-color:  #373737;
+    border-bottom-right-radius: 18px; 
+    width: 106.5px;
+}
+.qr-block-android img {
+    padding-top:4px ;
+    width: 26px;
+    height: 26px;
+     
+  }
+
